@@ -22,4 +22,4 @@ class BookmarkDetailView(DetailView) :
 class BookmarkUpdateView(UpdateView) :
     model = Bookmark
     fields = ['site_name', 'url']   #form
-    template_name_suffix =  '_update'   #bookmark_update.html
+    template_name_suffix = '_update'   #bookmark_update.html
