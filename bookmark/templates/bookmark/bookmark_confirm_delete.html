@@ -1,15 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Bookmark Confirm Delte</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block title %}Delete{% endblock %}
+
+{% block content %}
+    <div>진짜 지울거야? {{ bookmark }}</div>
     <form action="" method="post">
         {% csrf_token %}
-        <div>진짜 지울거야? {{ bookmark }}</div>
         <button type="submit">sure</button>
-        <button onclick="history.back()">No!!</button>
     </form>
-</body>
-</html>
+    <button onclick="history.back()">No!!</button>
+{% endblock %}
